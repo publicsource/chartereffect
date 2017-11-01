@@ -1,0 +1,56 @@
+//
+// Typography
+// --------------------------------------------------
+
+@include selection {
+	background-color: #418cff;
+	color: $brand-black;
+}
+
+html{
+	font-size: 100%; /* Sets baseline of 16px for REM calculations */
+	@include media(max-width 992px) {
+		font-size: 90%;
+	}
+	@include media(max-width 882px) {
+		font-size: 80%;
+	}
+}
+
+body{
+	background-color: #ffffff;
+	color: $brand-black;
+	font-family: 'mallory', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Cutive Mono';
+	//-webkit-font-smoothing: antialiased;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-family: 'Alfa Slab One';
+	//-webkit-font-smoothing: antialiased;
+	letter-spacing: 1px;
+}
+
+h2,
+h3{
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.2;
+}
+
+p,
+li{
+	line-height: 1.4;
+	//@include rem(margin, 0px 0px 10px);
+}
+
+a{
+	@include transition(color .15s linear);
+	text-decoration: none;
+	&:hover{
+	}
+}
